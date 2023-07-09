@@ -18,10 +18,7 @@
 #include "libinjection_sqli.h"
 #include "libinjection_sqli_data.h"
 
-#ifdef __clang_analyzer__
-// make clang analyzer happy by defining a dummy version
-#define LIBINJECTION_VERSION "undefined"
-#endif
+#define LIBINJECTION_VERSION "3.9.1"
 
 #define LIBINJECTION_SQLI_TOKEN_SIZE  sizeof(((stoken_t*)(0))->val)
 #define LIBINJECTION_SQLI_MAX_TOKENS  5
